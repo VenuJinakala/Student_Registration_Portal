@@ -2,6 +2,9 @@
 
 A fullstack application built with **React.js**, **Node.js / Express**, and a **SQLite Database** (`schema.sql` included), strictly fulfilling every requirement and mockup from the **Task Document & Evaluation Guide**.
 
+### 🌐 Live Deployment Link:
+👉 **[https://venujinakala.github.io/Student_Registration_Portal/](https://venujinakala.github.io/Student_Registration_Portal/)**
+
 ---
 
 ## 🚀 Features & Evaluation Checklist Compliance
