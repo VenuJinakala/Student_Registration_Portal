@@ -1,0 +1,233 @@
+:root {
+  --primary-blue: #0d6efd;
+  --primary-hover: #0b5ed7;
+  --header-bg: #cfe2ff;
+  --header-border: #b6d4fe;
+  --card-bg: #ffffff;
+  --border-color: #dee2e6;
+  --text-dark: #212529;
+  --text-muted: #6c757d;
+  --accent-banner: #0d6efd;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f8fafc;
+  color: var(--text-dark);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Unified App Header matching Mockup */
+.portal-navbar {
+  background-color: #dbeafe;
+  border-bottom: 1px solid #bfdbfe;
+  padding: 0.65rem 1.5rem;
+}
+
+.portal-brand {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #1e3a8a;
+  text-decoration: none;
+}
+
+.portal-nav-link {
+  color: #1d4ed8;
+  font-weight: 500;
+  font-size: 0.95rem;
+  text-decoration: none;
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+}
+
+.portal-nav-link:hover {
+  color: #1e40af;
+  background-color: rgba(29, 78, 216, 0.08);
+  text-decoration: underline;
+}
+
+.portal-nav-link.active {
+  font-weight: 700;
+  color: #1e40af;
+}
+
+/* Card Styling */
+.portal-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.portal-card-header {
+  background-color: #f8fafc;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 1rem 1.5rem;
+  font-weight: 600;
+  font-size: 1.15rem;
+}
+
+/* Student Dashboard Banner matching Mockup Page 4 */
+.welcome-banner {
+  background: linear-gradient(135deg, #0d6efd 0%, #1d4ed8 100%);
+  color: #ffffff;
+  padding: 1.1rem 1.5rem;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 10px rgba(13, 110, 253, 0.2);
+}
+
+.welcome-title {
+  font-size: 1.35rem;
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+/* Profile details grid & item */
+.profile-detail-row {
+  display: flex;
+  padding: 0.65rem 0;
+  border-bottom: 1px solid #f1f5f9;
+  align-items: center;
+}
+
+.profile-detail-row:last-child {
+  border-bottom: none;
+}
+
+.profile-detail-label {
+  font-weight: 600;
+  width: 170px;
+  color: #475569;
+  flex-shrink: 0;
+}
+
+.profile-detail-value {
+  color: #1e293b;
+  flex-grow: 1;
+}
+
+/* Locked badge/icon */
+.locked-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.8rem;
+  color: #64748b;
+  background-color: #f1f5f9;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  margin-left: 0.5rem;
+}
+
+/* Footer matching Mockup pages */
+.portal-footer {
+  margin-top: auto;
+  text-align: center;
+  padding: 1.25rem;
+  color: #64748b;
+  font-size: 0.85rem;
+  border-top: 1px solid #e2e8f0;
+  background-color: #ffffff;
+}
+
+/* Table styling for Admin */
+.admin-table th {
+  background-color: #f8fafc;
+  font-weight: 600;
+  color: #334155;
+  border-top: none;
+  font-size: 0.88rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.admin-table td {
+  vertical-align: middle;
+  font-size: 0.92rem;
+}
+
+/* Filter controls bar */
+.filter-bar {
+  background-color: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Badges for interests */
+.interest-badge {
+  background-color: #e0f2fe;
+  color: #0369a1;
+  border: 1px solid #bae6fd;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 0.2rem 0.5rem;
+  border-radius: 12px;
+  margin-right: 0.35rem;
+  margin-bottom: 0.25rem;
+  display: inline-block;
+}
+
+/* PDF link pill */
+.pdf-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background-color: #fee2e2;
+  color: #dc2626;
+  border: 1px solid #fecaca;
+  padding: 0.3rem 0.65rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.pdf-pill:hover {
+  background-color: #fecaca;
+  color: #b91c1c;
+  text-decoration: none;
+  box-shadow: 0 2px 4px rgba(220, 38, 38, 0.15);
+}
+
+/* Error banner matching Page 5 mockup */
+.mockup-error-banner {
+  background-color: #ef4444;
+  color: #ffffff;
+  padding: 0.65rem 1rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  box-shadow: 0 2px 4px rgba(239, 68, 68, 0.2);
+}
+
+.mockup-error-banner button {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1.25rem;
+  cursor: pointer;
+  line-height: 1;
+}

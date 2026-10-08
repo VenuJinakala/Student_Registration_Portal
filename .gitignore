@@ -1,0 +1,34 @@
+# Node modules
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Production build
+client/dist/
+dist/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Database files
+server/database.sqlite
+server/database.sqlite-wal
+server/database.sqlite-shm
+
+# Dynamic test uploads (keep sample_aadhaar.pdf and .gitkeep)
+server/uploads/aadhaar_*
+test_dummy.pdf
+
+# Editor & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
